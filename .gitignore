@@ -1,0 +1,7 @@
+# Ignore virtual environment
+gen_env/
+GENAI APIs/gen_env/
+
+# Ignore Pycache
+__pycache__/
+*.py[cod]

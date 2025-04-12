@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthcare Chatbot</title>
+  <link rel="stylesheet" href="chatbot.css">
+  <script src="chatbot.js" defer></script>
+</head>
+<body>
+  <h1>🩺 Healthcare Chatbot</h1>
+  <div id="user_info"></div>
+  <div class="chat-container">
+    <div id="messages-container" class="messages-container"></div>
+    <div class="input-container">
+      <input type="text" id="user_input" placeholder="Ask me anything about healthcare..." />
+      <div class="send-row">
+        <button onclick="getResponse()">Send</button>
+        <input type="file" id="lab_file" />
+        <button onclick="uploadFile()">Upload Lab Report</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

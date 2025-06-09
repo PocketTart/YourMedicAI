@@ -4,6 +4,6 @@ requests==2.32.3
 pydantic==2.10.6
 faiss-cpu==1.7.2
 langchain==0.3.25
-langchaincommunity==0.3.24
+langchain-community==0.3.24
 openai==1.75.0
 python-dotenv==1.0.1

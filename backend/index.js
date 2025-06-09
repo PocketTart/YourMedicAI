@@ -12,8 +12,10 @@ const app = express();
 
 // --- CORS Configuration ---
 const origins = [
-  "http://localhost:5173","https://your-medic-ai.vercel.app/"
+  "http://localhost:5173",
+  "https://your-medic-ai.vercel.app" 
 ];
+
 
 app.use(cors({
   origin: origins,

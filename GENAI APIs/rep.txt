@@ -1,5 +1,5 @@
-Patient Name: John Doe
-Age: 45
+Patient Name: Anurag
+Age: 30
 Gender: Male
 Date: 2025-04-10
 

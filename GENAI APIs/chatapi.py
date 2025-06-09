@@ -22,6 +22,9 @@ class ChatRequest(BaseModel):
     name: str
     age: int
     medical_history: str
+    weight: float
+    medication: str
+    bloodgroup: str
     query: str
 
 @app.post("/chat/")
@@ -33,7 +36,11 @@ async def chat(request: ChatRequest):
         f"name-{request.name}, "
         f"age-{request.age}, "
         f"medicalhistory-{request.medical_history}, "
+        f"weight-{request.weight}, "
+        f"current medication-{request.medication}, "
+        f"blood group-{request.bloodgroup}, "
         f"message-{request.query}"
+        
     )
 
     response = chatbot.invoke({"input": formatted_input})

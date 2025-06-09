@@ -13,7 +13,13 @@ from langchain_core.documents import Document
 from labagent import lab_tool
 
 
-apikey = "YOURAPIKEY" #get it from MISTRALAI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  
+
+apikey = os.getenv("MISTRAL_API_KEY")
+
 llm = ChatOpenAI(
     openai_api_key=apikey,
     openai_api_base="https://api.mistral.ai/v1",
@@ -34,7 +40,7 @@ faiss_index = FAISS.load_local(
 retriever = faiss_index.as_retriever(search_kwargs={"k": 3})
 
 prompt_template = PromptTemplate(
-    input_variables=["name", "age", "medical_history", "history", "input"],
+    input_variables=["name", "age", "medical_history", "history", "input","weight","medications","bloodgroup"],
     template="""You are a caring and intelligent healthcare assistant designed to provide accurate medical advice tailored to the user's personal details. 
 You prioritize warmth, empathy, and factual information.
 
@@ -45,6 +51,10 @@ Greet the user warmly by name, acknowledging their ongoing health journey. If ap
 - **Name:** {name}
 - **Age:** {age}
 - **Medical History:** {medical_history}
+- **Weight:** {weight}
+- **medications:** {medications}
+- **blood group:** {bloodgroup}
+
 
 ### Conversation History:
 {history}

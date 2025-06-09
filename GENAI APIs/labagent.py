@@ -7,11 +7,17 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.tools import Tool
 embedding_model = HuggingFaceEmbeddings(model_name="BAAI/bge-base-en-v1.5")
 
-apikey = "YOURAPIKEY" #get it from MISTRALAI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  
+
+apikey = os.getenv("MISTRAL_API_KEY")
+
 llm = ChatOpenAI(
     openai_api_key=apikey,
     openai_api_base="https://api.mistral.ai/v1",
-    model="ministral-8b-latest"
+    model="ministral-3b-latest"
 )
 lab_faiss = None
 lab_qa_chain = None

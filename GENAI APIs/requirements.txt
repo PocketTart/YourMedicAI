@@ -2,7 +2,6 @@ fastapi==0.115.9
 uvicorn==0.34.3
 requests==2.32.3
 pydantic==2.10.6
-faiss-cpu==1.7.2
 langchain==0.3.25
 langchain-community==0.3.24
 openai==1.75.0

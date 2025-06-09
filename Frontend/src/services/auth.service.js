@@ -1,6 +1,6 @@
 import axios from 'axios'; 
 
-const API_URL = "http://localhost:8001/api/auth/"; 
+const API_URL = "https://yourmedicai-1.onrender.com/api/auth/"; 
 
 const login = async (email, password) => {
   try {

@@ -16,7 +16,7 @@ const UserInfoContent = ({ user, onProfileUpdate }) => {
   });
   const [isSaving, setIsSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState(''); 
-  const BACKEND_URL = 'http://localhost:8001'; 
+  const BACKEND_URL = 'https://yourmedicai-1.onrender.com'; 
 
   // Initialize form data when the user prop changes
   useEffect(() => {

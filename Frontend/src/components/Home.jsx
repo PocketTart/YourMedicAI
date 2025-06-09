@@ -18,7 +18,7 @@ const ChatbotContent = ({ user }) => {
 
   const messagesEndRef = useRef(null);
 
-  const BACKEND_URL = "http://127.0.0.1:8000"; // FastAPI backend
+  const BACKEND_URL = "https://yourmedicai.onrender.com"; // FastAPI backend
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });

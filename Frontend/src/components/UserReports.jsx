@@ -5,7 +5,7 @@ const UserReportsContent = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploadStatus, setUploadStatus] = useState('');
   const fileInputRef = useRef(null);
-  const BACKEND_URL = 'http://localhost:8000';
+  const BACKEND_URL = 'https://yourmedicai.onrender.com';
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];

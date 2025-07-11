@@ -139,3 +139,18 @@ YourMedicAI/
 ## 📃 License
 
 MIT License
+---
+🚀 Deployment
+You can access the live app here:
+🔗 https://your-medic-ai.vercel.app/
+
+✅ Deployed Services
+Component	Platform	Status
+Frontend	Vercel	✅ Live
+Auth Backend (Node.js)	Render	✅ Live
+Database	Neon (PostgreSQL)	✅ Live
+Chatbot Backend (FastAPI)	Not Deployed	⚠️ Local Only
+
+Note: The Chatbot & Lab Report Analysis Backend (FastAPI) is not deployed due to free-tier compute limits on platforms like Railway, Deta, and Render.
+To use these features, please run the FastAPI backend locally by following the setup instructions.
+---
